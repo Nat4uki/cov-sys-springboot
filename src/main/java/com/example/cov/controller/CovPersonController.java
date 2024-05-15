@@ -310,8 +310,8 @@ public class CovPersonController {
                 CovPersonGis covPersonGis = new CovPersonGis();
                 covPersonGis.setPersonKey(personKey);
 
-                covPersonGis.setIndexTime(targetData[1]);
-                String indexGpsStr = targetData[2].replace("[","").replace("]","");
+                covPersonGis.setIndexTime(targetData[4]);
+                String indexGpsStr = targetData[5].replace("[","").replace("]","");
                 String[] gpsStrArr = indexGpsStr.split(",");
 //                Map<String,Float> gpsMap = new HashMap<>();
 //                gpsMap.put()
@@ -323,7 +323,8 @@ public class CovPersonController {
                 float lat = Float.parseFloat(gpsStrArr[1]);
                 covPersonGis.setLat(lat);
 
-                covPersonGis.setPersonStatus(Integer.parseInt(targetData[3]));
+//                covPersonGis.setPersonStatus(Integer.parseInt(targetData[3]));
+                covPersonGis.setPersonStatus(1);
                 covPersonGisService.addData("cov_person_gis", covPersonGis);
             }
         }

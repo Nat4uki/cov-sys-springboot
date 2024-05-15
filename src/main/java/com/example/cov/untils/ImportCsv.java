@@ -56,7 +56,7 @@ public class ImportCsv {
             // 逐条读取记录，直至读完
             dataList.add(reader.getHeaders());
             while (reader.readRecord()) {
-                String[] gisItem = new String[5];
+                String[] gisItem = new String[6];
                 for(int i = 0; i < gisItem.length; i++){
                     System.out.println("NO"+i+": "+reader.get(i));
                     gisItem[i] = reader.get(i);

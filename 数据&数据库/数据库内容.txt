@@ -1,0 +1,4 @@
+cov_person_status     记录所有人的最新状态 共2000
+cov_person_gis 	所有人各个时间对应的位置与状态；优先以personKey排列，时间为次，2000 x 216 共432000条数据
+cov_person_form	所有人的信息 共2000
+cov_sum_seir	统计每一天SEIR的各个人数，9天共9条

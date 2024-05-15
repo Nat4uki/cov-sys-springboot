@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/cov_sys
+    url: jdbc:mysql://localhost:3306/cov_shz
     username: "root"
-    password: "covsys"
+    password: "102566"
     driver-class-name: com.mysql.cj.jdbc.Driver
